@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Cổng thông tin - VN Open API{% endblock title %}
+
+{% block main %}
+  <main class='text-gray-600 body-font flex-1'>
+
+    <div class='hero container mx-auto max-w-screen-lg flex p-8 items-center justify-center flex-col'>
+      <h1 class='text-4xl'>API mở khai thác thông tin công cộng Việt Nam</h1>
+    </div>
+
+    <h1 class='text-4xl text-blue-800 mt-8 text-center bg-none'>Các sản phẩm</h1>
+
+    <div class='products container max-w-screen-lg mt-6 mx-auto sm:grid sm:grid-cols-2 sm:gap-4'>
+      <div class='product shadow-lg p-4 rounded'>
+        <h2 class='text-2xl text-center text-green-700 hover:text-green-800 hover:underline'><a href='https://provinces.open-api.vn/'>Tỉnh thành Việt Nam</a></h2>
+        <p>
+          <img src="{{ get_url(path='img/screenshots/provinces.png') }}">
+        </p>
+      </div>
+      <div class='product shadow-lg p-4 rounded'>
+        <h2 class='text-2xl text-center text-green-700 hover:text-green-800 hover:underline'><a href='#'>Sắp ra mắt</a></h2>
+        <p class='text-center'>
+          ...
+        </p>
+      </div>
+    </div>
+  </main>
+{% endblock main %}
